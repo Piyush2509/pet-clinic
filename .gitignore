@@ -36,6 +36,7 @@ local.properties
 .loadpath
 .factorypath
 /src/main/resources/rebel.xml
+.springBeans
 
 # External tool builders
 .externalToolBuilders/**
@@ -69,6 +70,8 @@ local.properties
 ######################
 /log/
 /target/
+/pet-clinic-web/target/
+/pet-clinic-data/target/
 
 ######################
 # Gradle
