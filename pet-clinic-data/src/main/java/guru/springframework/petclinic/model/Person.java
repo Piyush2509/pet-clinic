@@ -3,7 +3,9 @@ package guru.springframework.petclinic.model;
 /**
  * Created by piyush.b.kumar on Nov 1, 2018
  */
-public class Person {
+public class Person extends BaseEntity {
+
+	private static final long serialVersionUID = -5249873716072541540L;
 
 	private String firstName;
 	private String lastName;
