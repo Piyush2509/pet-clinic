@@ -3,12 +3,12 @@ package guru.springframework.petclinic.services.map;
 import java.util.Set;
 
 import guru.springframework.petclinic.model.Pet;
-import guru.springframework.petclinic.services.CrudService;
+import guru.springframework.petclinic.services.PetService;
 
 /**
  * Created by piyush.b.kumar on Nov 5, 2018
  */
-public class PetServiceMap extends AbstractServiceMap<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractServiceMap<Pet, Long> implements PetService {
 
 	@Override
 	public Set<Pet> findAll() {
@@ -35,5 +35,4 @@ public class PetServiceMap extends AbstractServiceMap<Pet, Long> implements Crud
 		super.delete(object);
 	}
 
-	
 }
