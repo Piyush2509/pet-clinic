@@ -1,12 +1,17 @@
 package guru.springframework.petclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Created by piyush.b.kumar on Nov 1, 2018
  */
+@Entity
+@Table(name = "types")
 public class PetType extends BaseEntity {
 
-	private static final long serialVersionUID = -7458773405372253161L;
-
+	@Column(name = "name")
 	private String name;
 
 	public String getName() {
