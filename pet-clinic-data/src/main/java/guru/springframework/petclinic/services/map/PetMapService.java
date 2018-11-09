@@ -2,6 +2,7 @@ package guru.springframework.petclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import guru.springframework.petclinic.model.Pet;
@@ -11,6 +12,7 @@ import guru.springframework.petclinic.services.PetService;
  * Created by piyush.b.kumar on Nov 5, 2018
  */
 @Service
+@Profile({ "default", "map" })
 public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
 
 	@Override
