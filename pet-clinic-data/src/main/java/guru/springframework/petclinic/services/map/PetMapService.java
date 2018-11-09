@@ -11,7 +11,7 @@ import guru.springframework.petclinic.services.PetService;
  * Created by piyush.b.kumar on Nov 5, 2018
  */
 @Service
-public class PetServiceMap extends AbstractServiceMap<Pet, Long> implements PetService {
+public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
 
 	@Override
 	public Set<Pet> findAll() {

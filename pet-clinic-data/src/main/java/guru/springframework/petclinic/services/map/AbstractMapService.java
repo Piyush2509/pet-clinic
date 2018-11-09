@@ -12,7 +12,7 @@ import guru.springframework.petclinic.model.BaseEntity;
 /**
  * Created by piyush.b.kumar on Nov 5, 2018
  */
-public abstract class AbstractServiceMap<T extends BaseEntity, ID> {
+public abstract class AbstractMapService<T extends BaseEntity, ID> {
 
 	protected Map<Long, T> map = new HashMap<>();
 
